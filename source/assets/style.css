@@ -6,7 +6,7 @@
   padding: 45px;
 }
 
-#title {
+.ptitle {
   padding-bottom: 0;
 }
 
@@ -29,7 +29,7 @@
   color: #6a737d;
 }
 
-#title p {
+.ptitle p {
   color: #777 !important;
 }
 

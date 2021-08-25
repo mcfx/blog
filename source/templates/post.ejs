@@ -8,6 +8,9 @@
       <a href="<%= getTagUrl(tag) %>" class="hoverlink"> <%= tag %> </a>
       <% }); else { %> 无 <% } %>
     </p>
+    <% if (post.url.startsWith('/archives/')) { %>
+    <p>这是一篇旧文，原始文章及评论可在 <a href="https://oldblog.mcfx.us<%= post.url %>">https://oldblog.mcfx.us<%= post.url %></a> 查看</p>
+    <% } %>
   </blockquote>
 </div>
 

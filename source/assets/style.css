@@ -1,0 +1,76 @@
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+#title {
+  padding-bottom: 0;
+}
+
+#title h1 {
+  font-size: 3em !important;
+  padding-bottom: 0;
+  border: none;
+}
+
+.hoverlink:hover {
+  color: #777 !important;
+  text-decoration: none !important;
+}
+
+.title a {
+  color: #444 !important;
+}
+
+.tags a {
+  color: #6a737d;
+}
+
+#title p {
+  color: #777 !important;
+}
+
+#title p a {
+  padding-left: 2em;
+}
+
+.title div {
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .flex {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
+.page-change {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 3px;
+  transition: 0.1s;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.page-change:hover {
+  background-color: #eee;
+}
+#page-change-current {
+  background-color: #eee;
+  cursor: default;
+}

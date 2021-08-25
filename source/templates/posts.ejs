@@ -1,0 +1,31 @@
+<% posts.forEach(function(post){ %>
+<div class="markdown-body">
+  <h1 class="title">
+    <a href="<%= post.url %>" class="hoverlink"><%= post.title %></a>
+  </h1>
+  <%- post.head %>
+</div>
+<% }); %>
+<% if (totalPages > 1) { %>
+<div class="markdown-body title">
+  <div class="flex">
+    <p style="width: 5em">
+      <% if (curPage > 1) { %>
+      <a href="<%- getPageUrl(curPage - 1) %>" class="hoverlink">Newer ←</a>
+      <% } %>
+    </p>
+    <div>
+      <% for (var page = 1; page <= totalPages; page++) if (page == curPage) { %>
+        <div class="page-change" id="page-change-current"><%= page %></div>
+      <% } else {%>
+        <a href="<%- getPageUrl(page) %>"><div class="page-change"><%= page %></div></a>
+      <% } %>
+    </div>
+    <p style="width: 5em; text-align: right">
+      <% if (curPage < totalPages) { %>
+      <a href="<%- getPageUrl(curPage + 1) %>" class="hoverlink">Older →</a>
+      <% } %>
+    </p>
+  </div>
+</div>
+<% } %>

@@ -26,7 +26,7 @@
 
 至此，一个博客基本就写好了，完整代码可见 [mcfx/blogen](https://github.com/mcfx/blogen) 及 [mcfx/blog](https://github.com/mcfx/blog)。
 
-### 其他东西
+### 没有实现的 feature
 
 #### RSS
 
@@ -39,3 +39,9 @@
 #### meta description & keyword
 
 懒得搞 SEO 优化了，反正也没啥人看。
+
+### 其他东西
+
+由于是纯静态的，加载速度还是非常不错。
+
+Giscus 用到了 cdnjs，国内部分地区被屏蔽了，反代并 hack 了一下让他至少能显示出第一条评论。

@@ -34,23 +34,46 @@
 }
 
 #title p a {
-  padding-left: 2em;
+  padding: 0 1em 0 1em;
 }
 
 .title div {
   justify-content: space-between;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .flex {
     display: flex;
+  }
+  #nav {
+    margin-right: -1em;
+  }
+  .page-next {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
+  .small-flex {
+    display: flex;
+  }
   .markdown-body {
     padding: 15px;
   }
+  #title {
+    text-align: center;
+  }
+  .page-next-2 {
+    display: none;
+  }
+}
+
+.page-pc {
+  width: 5em;
+}
+.page-next,
+.page-next-2 {
+  text-align: right;
 }
 
 .page-change {
@@ -73,4 +96,7 @@
 #page-change-current {
   background-color: #eee;
   cursor: default;
+}
+#page-changes {
+  text-align: center;
 }

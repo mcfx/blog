@@ -14,19 +14,28 @@
 <% if (totalPages > 1) { %>
 <div class="markdown-body title">
   <div class="flex">
-    <p style="width: 5em">
-      <% if (curPage > 1) { %>
-      <a href="<%- getPageUrl(curPage - 1) %>" class="hoverlink">← Newer</a>
-      <% } %>
-    </p>
-    <div>
+    <div class="small-flex">
+      <p class="page-pc">
+        <% if (curPage > 1) { %>
+        <a href="<%- getPageUrl(curPage - 1) %>" class="hoverlink">← Newer</a>
+        <% } %>
+      </p>
+      <p class="page-pc page-next">
+        <% if (curPage < totalPages) { %>
+        <a href="<%- getPageUrl(curPage + 1) %>" class="hoverlink">Older →</a>
+        <% } %>
+      </p>
+    </div>
+    <div id="page-changes">
       <% for (var page = 1; page <= totalPages; page++) if (page == curPage) { %>
-        <div class="page-change" id="page-change-current"><%= page %></div>
+      <div class="page-change" id="page-change-current"><%= page %></div>
       <% } else {%>
-        <a href="<%- getPageUrl(page) %>"><div class="page-change"><%= page %></div></a>
+      <a href="<%- getPageUrl(page) %>"
+        ><div class="page-change"><%= page %></div></a
+      >
       <% } %>
     </div>
-    <p style="width: 5em; text-align: right">
+    <p class="page-pc page-next-2">
       <% if (curPage < totalPages) { %>
       <a href="<%- getPageUrl(curPage + 1) %>" class="hoverlink">Older →</a>
       <% } %>

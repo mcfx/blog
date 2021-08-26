@@ -1,0 +1,3 @@
+# blog
+
+https://mcfx.us/

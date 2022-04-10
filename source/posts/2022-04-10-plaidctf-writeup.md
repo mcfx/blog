@@ -13,6 +13,7 @@ Writeup for choreography and pressure in PlaidCTF 2022.
 In `cipher.py`, if we assume that `encrypt1` is an encryption function, then `encrypt2` is the corresponding decryption function.
 
 Let $A=a\oplus k_3,B=b\oplus k_0,C=c\oplus k_2,D=d\oplus k_1,k_{01}=k_0\oplus k_1,k_{23}=k_2\oplus k_3$. After 4 rounds of encryption, they becomes:
+
 $$
 \begin{align*}
 A&\Rightarrow A\oplus \text{sbox}[B]\oplus \text{sbox}[B\oplus \text{sbox}[C\oplus \text{sbox}[D]]\oplus k_{01}]\\
@@ -21,6 +22,7 @@ C&\Rightarrow C\oplus \text{sbox}[D]\oplus \text{sbox}[D\oplus \text{sbox}[A\opl
 D&\Rightarrow D\oplus \text{sbox}[A\oplus \text{sbox}[B]]\oplus \text{sbox}[A\oplus \text{sbox}[B]\oplus \text{sbox}[B\oplus \text{sbox}[C\oplus \text{sbox}[D]]\oplus k_{01}]\oplus k_{23}]
 \end{align*}
 $$
+
 Now suppose $k_{01}$ and $k_{23}$ is given.
 
 After $2^{22}+2$ rounds, $A,B,C,D$ becomes $C',D',A',B'$. We can precompute this for all $(A,B,C,D)$ in $O(22\times 2^{32})$ time by binary lifting. Then we can calculate the mapping $f:(A\oplus A',B\oplus B',C\oplus C',D\oplus D')\Rightarrow (A,B,C,D)$. $f$ is a one-to-many function, we can store any of them.

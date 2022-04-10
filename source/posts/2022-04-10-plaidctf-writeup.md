@@ -8,7 +8,7 @@ Writeup for choreography and pressure in PlaidCTF 2022.
 
 #! head end
 
-# choreography
+## choreography
 
 In `cipher.py`, if we assume that `encrypt1` is an encryption function, then `encrypt2` is the corresponding decryption function.
 
@@ -215,7 +215,7 @@ else:
 open('log.txt', 'ab').write(r.recvall())
 ```
 
-# pressure
+## pressure
 
 In this loop, when $k=1$, `hsh(b'1')` is always added to `s`:
 
@@ -224,7 +224,7 @@ for k in range(1, CONST):
   s.add(hsh(bytes(str(k + CONST * (r % k)).strip('L').encode('utf-8'))))
 ```
 
-So we can guess which one is `hsh(b'1')` in part 2, and send `2*hsh(b'1')`, `3*hsh(b'1')`, ..., to the server. The success probability is at least $\frac 1{4096+256}$.
+So we can guess which one is `hsh(b'1')` in part 2, and send `2*hsh(b'1')`, `3*hsh(b'1')`, ... , to the server. The success probability is at least $\frac 1{4096+256}$.
 
 ```python
 from nacl.bindings.crypto_scalarmult import (

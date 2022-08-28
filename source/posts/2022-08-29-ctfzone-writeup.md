@@ -4,7 +4,7 @@ tags:
   - Writeup
 #! meta end
 
-Writeup for SignatureZone, Yet Another Des and Padic in PlaidCTF 2022.
+Writeup for SignatureZone, Yet Another Des and Padic in CTFZone 2022.
 
 #! head end
 

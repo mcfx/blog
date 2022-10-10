@@ -7,6 +7,8 @@ tags:
 
 #! head end
 
+**Update:** you can use `CALLDATALOAD` instead of `CALLDATACOPY` and `MLOAD`, I forgot about that.
+
 Inspired by https://blog.openzeppelin.com/deep-dive-into-the-minimal-proxy-contract/, we can build a similar one, but allows arbitrary `delegatecall` target.
 
 In order to save gas, we only store the target address in input data (which we can deploy one for each airdrop target), don't allow call data for the `delegatecall`, and ignore the return value.

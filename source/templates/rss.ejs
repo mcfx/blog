@@ -7,6 +7,14 @@
     <language>zh-hans-cn</language>
     <lastBuildDate><%= new Date().toISOString() %></lastBuildDate>
     <atom:link href="https://mcfx.us/feed/" rel="self" type="application/rss+xml" />
-    <%- posts %>
+    <% for (const post of posts) { %>
+      <item>
+        <title><%= post.title %></title>
+        <link>https://mcfx.us<%- post.url %></link>
+        <guid>https://mcfx.us<%- post.url %></guid>
+        <pubDate><%= new Date(post.date).toISOString() %></pubDate>
+        <description><![CDATA[ <%- post.head %> ]]></description>
+      </item>
+    <% } %>
   </channel>
 </rss>

@@ -100,3 +100,39 @@
 #page-changes {
   text-align: center;
 }
+
+@counter-style counter-1 {
+  system: extends decimal;
+  prefix: "1.";
+  suffix: " ";
+}
+
+@counter-style counter-1 {
+  system: extends decimal;
+  prefix: "1.";
+  suffix: ". ";
+}
+
+.toc {
+  border: 1px solid gray;
+  display: table;
+  padding: 7px;
+}
+
+.toc h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.toc-root {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.tocnumber {
+  color: black;
+}

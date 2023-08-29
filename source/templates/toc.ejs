@@ -1,0 +1,28 @@
+<% function generate(headings, prefix) { %>
+    <% if (headings.length) { %>
+        <% let minLevel = headings[0].level, lstPos = 0, cnt = 0; %>
+        <% if (prefix) { %>
+            <ul>
+        <% } else { %>
+            <ul class="toc-root">
+        <% } %>
+            <% for (let i = 1; i <= headings.length; i++) if (i == headings.length || headings[i].level <= minLevel) { %>
+                <% if (i != headings.length) minLevel = headings[i].level; %>
+                <% cnt++; %>
+                <% const curPrefix = prefix + cnt + "."; %>
+                <li>
+                    <a href="#<%= headings[lstPos].url %>">
+                        <span class="tocnumber"><%= curPrefix %></span>
+                        <%= headings[lstPos].text %>
+                    </a>
+                    <%- generate(headings.slice(lstPos + 1, i - 1), curPrefix) %>
+                </li>
+                <% lstPos = i; %>
+            <% } %>
+        </ul>
+    <% } %>
+<% } %>
+<div class="toc">
+    <h4><%= name %></h4>
+    <%- generate(headings, '') %>
+</div>

@@ -13,7 +13,7 @@
                 <li>
                     <a href="#<%= headings[lstPos].url %>">
                         <span class="tocnumber"><%= curPrefix %></span>
-                        <%= headings[lstPos].text %>
+                        <%- headings[lstPos].text %>
                     </a>
                     <%- generate(headings.slice(lstPos + 1, i), curPrefix) %>
                 </li>

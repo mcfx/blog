@@ -4,6 +4,10 @@ tags:
   - 图同构
 #! meta end
 
+这篇文章原发布在 [https://mcfxmcfx.blog.uoj.ac/blog/7279](https://mcfxmcfx.blog.uoj.ac/blog/7279)。
+
+#! head end
+
 #! toc 目录
 
 这篇文章原发布在 [https://mcfxmcfx.blog.uoj.ac/blog/7279](https://mcfxmcfx.blog.uoj.ac/blog/7279)。

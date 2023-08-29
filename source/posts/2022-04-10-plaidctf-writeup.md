@@ -8,6 +8,8 @@ Writeup for choreography and pressure in PlaidCTF 2022.
 
 #! head end
 
+#! toc Contents
+
 ## choreography
 
 In `cipher.py`, if we assume that `encrypt1` is an encryption function, then `encrypt2` is the corresponding decryption function.

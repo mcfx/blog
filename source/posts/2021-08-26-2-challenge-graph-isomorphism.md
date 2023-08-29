@@ -4,6 +4,8 @@ tags:
   - 图同构
 #! meta end
 
+#! toc 目录
+
 这篇文章原发布在 [https://mcfxmcfx.blog.uoj.ac/blog/7279](https://mcfxmcfx.blog.uoj.ac/blog/7279)。
 
 前几天在 EI 群看到 EtaoinWu 在 UOJ 搞了一道编码题 [#679. 无标号图编码](https://uoj.ac/problem/679)，感觉很有意思，于是就来做了做。

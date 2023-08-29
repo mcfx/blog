@@ -6,6 +6,8 @@ tags:
 
 In the DEFCON CTF Qualifier this year, I mainly contributed in challenge `opacity` and `blackbox`. This post contains the writeup for them.
 
+#! toc Contents
+
 # opacity
 
 In this challenge, we are given two ELFs `init_drm` and `run_prog`. We can use `./init_drm <program.license> ./run_prog <program.bin>` to run some programs.

@@ -8,6 +8,8 @@ Writeup for SignatureZone, Yet Another Des and Padic in CTFZone 2022.
 
 #! head end
 
+#! toc Contents
+
 ## SignatureZone
 
 It only checks the aggregated signature, but not the user one. So we just need to make the aggregated signature and public key to values that are controlled by us.

@@ -117,6 +117,7 @@
   border: 1px solid gray;
   display: table;
   padding: 7px;
+  margin-bottom: 16px;
 }
 
 .toc h4 {

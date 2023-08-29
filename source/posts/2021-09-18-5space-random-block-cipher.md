@@ -14,7 +14,7 @@ tags:
 
 本次第五空间有一个“人工智能”分类，但是里面却是一道 Crypto 题目。队友搜索到了 https://www.cryptool.org/assets/posts/2019-11-05-20-years-cryptool-looking-back-and-forward/CT20years_DeepLearningSpeck.pdf 这个用人工智能分析块密码的 slide，但是我看到本题觉得用普通的差分攻击就能做，于是没考虑人工智能相关的东西。
 
-本题下发文件可以在 [这里](https://files.mcfx.us/blog_files/20210918/d9e2f06be68d4af39e8b75201cbd87c7.zip) 下载。
+本题下发文件可以在 [这里](old_uploads/5space2021_random_block_cipher.zip) 下载。
 
 ### 加密流程分析
 

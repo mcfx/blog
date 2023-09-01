@@ -390,7 +390,7 @@ p.send(instruction_data)
 p.interactive()
 ```
 
-## Crypto
+# Crypto
 
 ## cryptoGRAPHy 1
 
@@ -1906,7 +1906,7 @@ $$
 F(x,y)=\left(\sum_{v=0}^{g-2} \sum_j s[v][j]^x s[v+1][j]^y\right)+\left(\sum_j s[g-1][j]^x s[0][(j+k^{-1})\bmod m']^y\right)-s[m-1]^x\cdot s[0]^y
 $$
 
-For more arguments, we need to find the corresponding $j+\text{something}$. It's a similar procees. Finally we can compute $Ans$ using these $F$ values.
+For more arguments, we need to find the corresponding $j+\text{something}$. It's a similar process. Finally we can compute $Ans$ using these $F$ values.
 
 The total time complexity is $O(n)$ if we treat $k$ as a constant. The actual time complexity might be about $O(n\cdot k\cdot 2^k)$.
 The time complexity of author's solution should be $O(n\cdot\text{polylog}(n)\cdot\text{poly}(k))$, which is much better.

@@ -1687,7 +1687,7 @@ int main()
 
 ### Brief problem statement
 
-Given $n\le 7000, k<m\le 10^{18}, p\le 4$, and $\forall i\in[1,n], 0\le l_i\le r_i\le m, b_i<m, a_i<\text{Mod}$, where $\text{Mod}=10^9+7$.
+Given $n\le 7000, k<m\le 10^{18}, p\le 4$, and $\forall i\in[1,n], 0\le l_i\le r_i\le m, b_i<m, a_i<10^9+7$.
 
 Suppose there is a huge array $s[0..m-1]$, for each $i\in[1,n]$, we enumerate $j\in [l_i,r_i]$, and add $a_i$ to $s[(k(j+l_i)+b_i)\bmod m]$.
 

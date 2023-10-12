@@ -1,0 +1,3 @@
+[submodule "blogen"]
+	path = blogen
+	url = https://github.com/mcfx/blogen.git
